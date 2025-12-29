@@ -1,0 +1,10 @@
+# Unified API Server Dependencies
+flask
+flask-cors
+numpy
+pandas
+scikit-learn
+joblib
+gunicorn
+python-dotenv
+boto3

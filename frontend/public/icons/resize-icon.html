@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create 192x192 Icon</title>
+</head>
+<body>
+    <h1>Creating 192x192 icon from 512x512...</h1>
+    <canvas id="canvas" width="192" height="192" style="border: 1px solid #000;"></canvas>
+    
+    <script>
+        // Load the 512x512 icon and resize it to 192x192
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        const img = new Image();
+        img.onload = function() {
+            // Draw the resized image
+            ctx.drawImage(img, 0, 0, 192, 192);
+            
+            // Convert to blob and create download
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'icon-192x192.png';
+                a.textContent = 'Download 192x192 icon';
+                document.body.appendChild(a);
+                a.click();
+            }, 'image/png');
+        };
+        
+        img.src = './icon-512x512.png';
+    </script>
+</body>
+</html>

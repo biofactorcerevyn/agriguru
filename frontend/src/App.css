@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+/* Use subtle shadows instead of colorful ones */
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.2));
+}
+
+/* Remove specific React logo styling or make it more subtle */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.3));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 0.5rem;
+}
+
+.read-the-docs {
+  color: #737373;
+}

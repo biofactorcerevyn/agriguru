@@ -1,0 +1,17 @@
+AgriGuruGlobal
+Copyright 2025 AgriGuruGlobal
+
+This product includes software developed by AgriGuruGlobal (https://agriguru.global).
+
+This software contains components from the following open source projects:
+
+- React (https://reactjs.org/) - MIT License
+- TypeScript (https://www.typescriptlang.org/) - Apache License 2.0
+- Material UI (https://mui.com/) - MIT License
+- Chart.js (https://www.chartjs.org/) - MIT License
+- FastAPI (https://fastapi.tiangolo.com/) - MIT License
+- Flask (https://flask.palletsprojects.com/) - BSD License
+- Groq Client (https://www.groq.com/) - Apache License 2.0
+- Supabase (https://supabase.com/) - Apache License 2.0
+
+For detailed license information, please refer to the LICENSE files included with each component.

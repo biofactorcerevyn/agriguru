@@ -1,0 +1,9 @@
+Error: The following dependencies are imported but could not be resolved:
+
+  [36maxios[39m [37m[2m(imported by C:/Users/akshi/Downloads/AgriGuru-main/AgriGuru-main/frontend/src/components/features/weather/SoilMoistureWidget.tsx)[22m[39m
+
+Are they installed?
+    at file:///C:/Users/akshi/Downloads/AgriGuru-main/AgriGuru-main/frontend/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:50666:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/akshi/Downloads/AgriGuru-main/AgriGuru-main/frontend/node_modules/vite/dist/node/chunks/dep-BWSbWtLw.js:50171:26
+^C^C

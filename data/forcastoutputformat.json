@@ -1,0 +1,59 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1752688800,
+            "main": {
+                "temp": 29.33,
+                "feels_like": 33.88,
+                "temp_min": 29.33,
+                "temp_max": 29.33,
+                "pressure": 1005,
+                "sea_level": 1005,
+                "grnd_level": 1004,
+                "humidity": 72,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 100
+            },
+            "wind": {
+                "speed": 5.42,
+                "deg": 190,
+                "gust": 8.38
+            },
+            "visibility": 10000,
+            "pop": 0.2,
+            "rain": {
+                "3h": 0.21
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-07-16 18:00:00"
+        }
+    ],
+    "city": {
+        "id": 1465868,
+        "name": "Vengavasal",
+        "coord": {
+            "lat": 12.8251,
+            "lon": 80.2258
+        },
+        "country": "IN",
+        "population": 3778,
+        "timezone": 19800,
+        "sunrise": 1752193167,
+        "sunset": 1752239357
+    }
+}

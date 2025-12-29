@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colorful Design System with Larger Font Sizes
+All colors MUST be HSL for consistency.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    
+    /* Primary - Green */
+    --primary: 122 38% 40%; /* #3E8E41 */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 122 38% 50%;
+    
+    /* Secondary - Light Gray */
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 20%;
+    
+    /* Accent - Yellow */
+    --accent: 45 88% 66%; /* #F4D35E */
+    --accent-foreground: 0 0% 20%;
+    
+    /* Success - Light Green */
+    --success: 142 72% 29%; /* #167940 */
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning - Amber */
+    --warning: 45 88% 66%; /* #F4D35E */
+    --warning-foreground: 0 0% 20%;
+    
+    /* Destructive - Light Red/Pink */
+    --destructive: 351 100% 86%; /* #FFB6C1 */
+    --destructive-foreground: 0 0% 20%;
+    
+    /* Info - Brown */
+    --info: 300 14% 48%; /* #8E6C88 */
+    --info-foreground: 0 0% 100%;
+    
+    /* Additional Colors */
+    --purple: 280 16% 49%;
+    --purple-foreground: 0 0% 100%;
+    
+    /* Status Colors for Conditions */
+    --optimal: 142 76% 90%; /* #DCFCE7 */
+    --optimal-foreground: 142 72% 29%; /* #167940 */
+    
+    --moderate: 45 100% 95%; /* #FFF8E6 */
+    --moderate-foreground: 33 92% 31%; /* #92400E */
+    
+    --unfavorable: 351 100% 92%; /* #FFD6DB */
+    --unfavorable-foreground: 0 72% 35%; /* #991B1B */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(122 38% 35%), hsl(122 38% 45%));
+    --gradient-yellow: linear-gradient(135deg, hsl(45 88% 60%), hsl(45 88% 70%));
+    --gradient-green: linear-gradient(135deg, hsl(142 72% 25%), hsl(142 72% 35%));
+    --gradient-brown: linear-gradient(135deg, hsl(300 14% 43%), hsl(300 14% 53%));
+    --gradient-hero: linear-gradient(135deg, hsl(122 38% 40%) 0%, hsl(45 88% 66%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.06);
+    --shadow-medium: 0 4px 16px hsl(0 0% 0% / 0.08);
+    --shadow-strong: 0 8px 24px hsl(0 0% 0% / 0.12);
+    
+    /* Transitions */
+    --transition-natural: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Component Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 45%;
+    
+    --border: 0 0% 93%;
+    --input: 0 0% 93%;
+    --ring: 122 38% 40%;
+    
+    --radius: 1rem;
+    
+    /* Sidebar Theme */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 122 38% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 100 61% 95%;
+    --sidebar-accent-foreground: 122 38% 40%;
+    --sidebar-border: 0 0% 93%;
+    --sidebar-ring: 122 38% 40%;
+  }
+
+  .dark {
+    /* Dark Theme */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 246 80% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 246 80% 80%;
+    
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 90%;
+    
+    --accent: 185 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --success: 160 84% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --info: 217 91% 65%;
+    --info-foreground: 0 0% 100%;
+    
+    --purple: 258 90% 70%;
+    --purple-foreground: 0 0% 100%;
+    
+    --pink: 330 81% 65%;
+    --pink-foreground: 0 0% 100%;
+    
+    --orange: 24 95% 58%;
+    --orange-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 22%;
+    --ring: 246 80% 70%;
+    
+    /* Dark Sidebar */
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 122 38% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 122 38% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 122 38% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-size: 16px; /* Base font size */
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans text-base;
+  }
+
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  h4 {
+    @apply text-lg font-semibold;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  /* Increase font size for mobile */
+  @media (max-width: 640px) {
+    html {
+      font-size: 18px;
+    }
+  }
+}
+
+@layer components {
+  /* Gradient Utilities */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-blue {
+    background: var(--gradient-blue);
+  }
+  
+  .gradient-green {
+    background: var(--gradient-green);
+  }
+  
+  .gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+  
+  .gradient-purple {
+    background: var(--gradient-purple);
+  }
+  
+  /* Shadow Utilities */
+  .shadow-natural {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  /* Transition Utilities */
+  .transition-natural {
+    transition: var(--transition-natural);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  /* Button Variants */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium transition-natural hover:bg-primary/90 shadow-natural;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-md font-medium transition-natural hover:bg-secondary/80 shadow-natural;
+  }
+  
+  .btn-success {
+    @apply bg-success text-success-foreground px-4 py-2 rounded-md font-medium transition-natural hover:bg-success/90;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground px-4 py-2 rounded-md font-medium transition-natural hover:bg-accent/90;
+  }
+  
+  .btn-info {
+    @apply bg-info text-info-foreground px-4 py-2 rounded-md font-medium transition-natural hover:bg-info/90;
+  }
+  
+  /* Card Variants */
+  .card-clean {
+    @apply bg-card text-card-foreground rounded-md shadow-natural border border-border transition-natural hover:shadow-medium;
+  }
+  
+  .card-feature {
+    @apply card-clean p-6 hover:scale-[1.02] cursor-pointer;
+  }
+  
+  .card-colored {
+    @apply bg-primary/5 text-card-foreground rounded-md shadow-natural border border-primary/20 transition-natural hover:shadow-medium;
+  }
+  
+  /* Text Utilities */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-blue {
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-sunset {
+    background: var(--gradient-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text-on-gradient {
+    @apply text-white font-semibold text-shadow;
+  }
+}

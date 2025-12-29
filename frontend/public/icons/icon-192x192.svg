@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" fill="#16a34a" rx="20"/>
+  <!-- Plant stem -->
+  <rect x="90" y="120" width="12" height="60" fill="white"/>
+  <!-- Leaves -->
+  <circle cx="60" cy="100" r="25" fill="white"/>
+  <circle cx="132" cy="100" r="25" fill="white"/>
+  <circle cx="96" cy="70" r="20" fill="white"/>
+  <!-- Soil -->
+  <rect x="20" y="160" width="152" height="20" fill="#8B4513" opacity="0.7"/>
+</svg>
